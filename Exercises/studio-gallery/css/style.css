@@ -1,0 +1,47 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the assignment.
+
+    Good luck, and have fun!
+*/
+.frame-1 {
+    border: 8px ridge rgb(255, 0, 0);
+    margin: 30px 30px 0px;
+    box-shadow: -2px 2px 2px grey;
+    transform: rotateZ('angle')
+}
+
+.frame-1 div, .frame-2 div, .frame-3 div {
+    background-color: #ddd;
+    border: 0px;
+    box-shadow: inset 0px 0px 4px rgb(167, 96, 96);
+    padding: 2px;
+}
+
+.frame-1 img {
+    width: 80px;
+    border: 1px inset;
+}
+frame-2 {
+    border:6px ridge rgb(0, 0, 0);
+    margin: 25px 25px 25px;
+    box-shadow: 2px 2px 2px grey;
+    transform: rotateZ('angle')
+}
+.frame-2 img {
+    width: 100px;
+    border:20px inset
+}
+
+.frame-3 {
+    border: 6px ridge rgb(0, 0, 0);
+    margin: 25px 25px 12px;
+    box-shadow: -2px 2px 2px grey;
+    transform: rotateX('angle')
+}
+.frame-3 img {
+    width: 80px;
+    border:1px inset;
+}
