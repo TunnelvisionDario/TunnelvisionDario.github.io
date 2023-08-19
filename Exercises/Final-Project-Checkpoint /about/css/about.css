@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    color: #333;
+    padding: 20px;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#text {
+    flex: 1; /* occupies the remaining space */
+}
+
+#image {
+    flex-basis: 200px; /* gives the image container a basic width */
+}
+
+#image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #558b2f;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
