@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main-content {
+            flex: 2;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+        }
+
+        img {
+            max-width: 150px; 
+            float: right;
+            margin: 0 0 20px 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+
+        .sidebar a {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="main-content">
+            <section id="forests">
+                <h2>Forests</h2>
+                <img src="images/forest.jpg" alt="Forests">
+                <p>Forests are the Earth's lungs, playing an invaluable 
+                    role in mitigating climate change. 
+                    They are the most biodiverse ecosystems on land, 
+                    home to more than 80% of the terrestrial species of 
+                    animals, plants, and insects. Covering about 31% of 
+                    the global land area, forests also provide shelter, 
+                    jobs, security, and cultural relevance for many 
+                    indigenous and local communities around the world. 
+                    There are various types of forests: tropical 
+                    rainforests, temperate forests, and boreal forests 
+                    being the primary ones. Each of these forest types 
+                    has its unique flora and fauna. They act as carbon 
+                    sinks, absorbing roughly 2 billion tonnes of carbon 
+                    dioxide every year.</p>
+            </section>
+
+            <section id="mountains">
+                <h2>Mountains</h2>
+                <img src="images/mountain.jpg" alt="Mountains">
+                <p>Mountains are majestic elevations that rise abruptly 
+                    from the surrounding environment and have peaks 
+                    narrower than their base. They are formed through 
+                    tectonic forces or volcanism. Covering about 22% of 
+                    the Earth's land surface, mountains play a critical 
+                    role in providing freshwater to billions of people, 
+                    acting as a biodiversity hub and offering a place 
+                    for tourism and spiritual contemplation. 
+                    They are also the sources of most of the rivers 
+                    around the world. Mountain ecosystems are sensitive 
+                    to climate change, and global warming could bring 
+                    some substantial adverse effects on them.</p>
+            </section>
+
+            <section id="oceans">
+                <h2>Oceans</h2>
+                <img src="images/ocean.jpg" alt="Oceans">
+                <p>Oceans are vast bodies of saltwater that cover more than 70% of the Earth's surface. They play a fundamental role in regulating the Earth's climate and are home to numerous species of marine flora and fauna. From the shallows of the coral reefs to the abyssal depths, oceans are a reservoir of immense biodiversity. They also act as the world's largest carbon sink, playing a pivotal role in climate regulation. Oceans also support the livelihood of millions of people, from fishing to tourism, and hold a deep cultural significance for many coastal communities.</p>
+            </section>
+
+            <section id="deserts">
+                <h2>Deserts</h2>
+                <img src="images/desert.png" alt="Deserts">
+                <p>Deserts are natural landscapes that receive very 
+                    little annual rainfall, leading to harsh living 
+                    conditions. They can be hot deserts, like the Sahara 
+                    or the Arabian desert, or cold deserts like the Gobi 
+                    or the Great Basin. While they may seem lifeless 
+                    at first glance, deserts are home to a myriad of 
+                    adapted plants and animals. The flora and fauna here 
+                    have unique adaptations that allow them to survive 
+                    the extreme temperatures and conditions. 
+                    Interestingly, the largest solar power plant in 
+                    the world is located in a desert, harnessing 
+                    the sun's energy.</p>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <h2>Contents</h2>
+            <a href="#forests">Forests</a>
+            <a href="#mountains">Mountains</a>
+            <a href="#oceans">Oceans</a>
+            <a href="#deserts">Deserts</a>
+        </div>
+    </div>
+</body>
+
+</html>
