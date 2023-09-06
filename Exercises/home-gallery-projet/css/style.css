@@ -1,0 +1,42 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header, main, footer {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Category Links */
+#categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#categories a {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: black;
+}
+
+/* About and Contact */
+#about, #contact {
+  margin-top: 40px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
