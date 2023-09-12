@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #272720;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+        }
+
+        .brandname {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .hero {
+            background-color: #eee;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #555;
+        }
+
+        .search {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .search input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search button:hover {
+            background-color: #ffffff;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .grid-item {
+            flex: 1;
+            min-width: calc(20% - 20px); /* 5 items per row */
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .price {
+            position: absolute;
+            bottom: 40px;
+            right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .add-to-cart {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #333;
+            color: #ffffff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #555;
+        }
+
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 20px;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #555;
+        }
+
+
+        @media (max-width: 768px) {
+            .grid-item {
+                min-width: calc(50% - 20px); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-item {
+                min-width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="#" class="brandname">Toy Store</a>
+            
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+ 
+    <section class="hero">
+        <h1>Welcome to Toy Store</h1>
+        <button>Shop Now</button>
+    </section>
+
+    
+    <section class="search">
+        <input type="text" placeholder="Search for toys...">
+        <button>Search</button>
+    </section>
+
+   
+    <section class="content-section">
+        <h2>Featured Toys</h2>
+      
+        <div class="grid">
+           
+         
+            <div class="grid-item">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTjER0yy2XPTF0JmTE6-OxvC1ckckIpt3DYy3k1MdsEq_raprmc1OtWQC5n6z_jNAjVyBAyblvMhDEhqjOIRmg7Wp9Sljrp3rQp7ficizZ4bNHPxQtw5sHf" alt="Toy 1">
+                <div class="price">$19.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="grid-item">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR0KxuAaztDBYGc2H2kX6y2jOKPh5z__yKC4rrTgNH8DIKWEqFip4SK4_krjlPngNsTgJ76qa43L-tdcAlCesxen3_TBnixIg1Q0EF6HQ4" alt="Toy 2">
+                <div class="price">$24.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSYouDCLSZuKwfxSBnh0bbl3TtPvgeqkGviFv6v9XFML12o488WE1EXZcqQA5g22b81KkXjJ2PJLnBKSVFkLUkVYq0RIqacrSvdtZQbtil5OnQ7BqFl74Vc7quspU4FOO1XFje8IrtZyQ&usqp=CAc" alt="Toy 3">
+                <div class="price">$22.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="grid-item">
+                <img srcset="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7176gyq_fj8ehmbHkJhcz3JVnBnuRSui7kODKqJaBziSeRuc4sH7TZiWOpkNVPjjlqYnwswEFKIyzGXOjYxNS1oy9ZbsVTIy_OekaeklKfy15eTRMfq9M&usqp=CAE" alt="Toy 4">
+                <div class="price">$29.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+         
+            <div class="grid-item">
+                <img src="images/shopping.jpg" alt="Toy 5">
+                <div class="price">$15.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="grid-item">
+                <img src="images/shopping1.jpg" alt="Toy 6">
+                <div class="price">$18.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+         
+            <div class="grid-item">
+                <img src="images/shopping2.jpg" alt="Toy 7">
+                <div class="price">$21.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+      
+            <div class="grid-item">
+                <img src="images/shopping3.jpg" alt="Toy 8">
+                <div class="price">$23.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+          
+            <div class="grid-item">
+                <img src="images/shop.jpg" alt="Toy 9">
+                <div class="price">$26.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+       
+            
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
