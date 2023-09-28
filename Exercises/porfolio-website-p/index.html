@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+        }
+
+       
+        .navbar {
+            background-color: #1a1a1a;
+            overflow: hidden;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 16px 24px;
+            transition: 0.3s;
+            font-weight: 500;
+            letter-spacing: 1px;
+            border-bottom: 3px solid transparent;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+            color: #f4f4f4;
+            border-bottom: 3px solid #e74c3c;
+        }
+
+        
+        .hero {
+            background: url('images/CreativePortraitProjectFinal.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 60px 0;
+            text-align: center;
+            color: #f4f4f4;
+        }
+
+        .hero h1 {
+            color: #e74c3c;
+            margin: 20px 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #f4f4f4;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #1a1a1a;
+        }
+
+       
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card img {
+            max-width: 60px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #333;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #f4f4f4;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #1a1a1a;
+        }
+
+        
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="https://dev-dario-goncalves-blog.pantheonsite.io/about/">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+  
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <a href="gallery.html" class="cta-button">View My Work</a>
+    </section>
+
+   
+    <section class="cards">
+        <div class="card">
+            <img src="images/NationalParkPosterFinal_dgoncalves .jpg" alt="Gallery">
+            <h2>Gallery</h2>
+            <p>Explore my projects and creations.</p>
+            <a href="gallery.html">View Gallery</a>
+        </div>
+        <div class="card">
+            <img src="images/Poison cover 5.jpg" alt="About">
+            <h2>About Me</h2>
+            <p>Learn more about my journey and skills.</p>
+            <a href="about.html">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="images/BookCover ProjectPart2_dgoncalves.jpg" alt="Contact">
+            <h2>Contact</h2>
+            <p>Get in touch with me for collaborations.</p>
+            <a href="contact.html">Contact Now</a>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2023 Dario Semedo Goncalves. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
