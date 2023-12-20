@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Seafood</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7ff; 
+        }
+        
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            background-color: #a2d5f2; 
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #006994; 
+        }
+
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .menu-item {
+            flex-basis: 20%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #006994;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #006994;
+        }
+
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            background-color: #a2d5f2; 
+            color: #006994;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .menu-item {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Our Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Search</a>
+        <a href="#">Locations</a>
+        <a href="#">Order Online</a>
+    </nav>
+
+    <h2>Our Menu</h2> 
+
+    <h3>Breakfast</h3>
+    <div class="menu-section">
+        <div class="menu-item">
+            <img src="images/omolote.jpg" alt="Seafood Omelette">
+            <h3>Seafood Omelette</h3>
+            <p>$9.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/badgel.jpg" alt="Salmon Bagel">
+            <h3>Salmon Bagel</h3>
+            <p>$8.49</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/shrimp toast.jpg" alt="Shrimp Toast">
+            <h3>Shrimp Toast</h3>
+            <p>$7.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/seafood pancake.jpg" alt="Fish Pancake">
+            <h3>Fish Pancake</h3>
+            <p>$8.99</p>
+        </div>
+    </div>
+
+    <h3>Meals</h3>
+    <div class="menu-section">
+        <div class="menu-item">
+            <img src="images/seafood platter.jpg" alt="Seafood Platter">
+            <h3>Seafood Platter</h3>
+            <p>$24.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/lobster roll.jpg" alt="Lobster Roll">
+            <h3>Lobster Roll</h3>
+            <p>$19.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/Grilled-Salmon.jpg" alt="Grilled Salmon">
+            <h3>Grilled Salmon</h3>
+            <p>$20.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/pasta.jpg" alt="Shrimp Pasta">
+            <h3>Shrimp Pasta</h3>
+            <p>$16.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/-Fish-Tacos.jpg" alt="Fish Tacos">
+            <h3>Fish Tacos</h3>
+            <p>$14.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/seafood-pizza-jpg.jpg" alt="Seafood Pizza">
+            <h3>Seafood Pizza</h3>
+            <p>$15.99</p>
+        </div>
+    </div>
+
+    <h3>Drinks</h3>
+    <div class="menu-section">
+        <div class="menu-item">
+            <img src="images/cocktail.jpg" alt="Sea Breeze Cocktail">
+            <h3>Sea Breeze Cocktail</h3>
+            <p>$8.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/blue soda.jpg" alt="Ocean Blue Soda">
+            <h3>Ocean Blue Soda</h3>
+            <p>$4.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/shrimp cocktail.jpg" alt="Shrimp Cocktail">
+            <h3>Shrimp Cocktail</h3>
+            <p>$9.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/brew.jpg" alt="Fisherman's Brew">
+            <h3>Fisherman's Brew</h3>
+            <p>$5.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/seaweed.jpg" alt="Seaweed Smoothie">
+            <h3>Seaweed Smoothie</h3>
+            <p>$6.99</p>
+        </div>
+    </div>
+
+    <footer>
+        Pacific Seafood
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.flex-container {
+    display: flex;
+    align-items: start;
+}
+
+.content {
+    flex: 3;  /* occupy 3 parts */
+    padding: 10px;
+}
+
+.sidebar {
+    flex: 1;  /* occupy 1 part */
+    border-left: 1px solid #ccc;
+    padding: 10px;
+}
+
+
