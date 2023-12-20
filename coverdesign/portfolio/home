@@ -130,15 +130,17 @@
             color: #f4f4f4;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
     <div class="navbar">
-        <a href="./">Home</a>
-        <a href="./gallery">Gallery</a>
-        <a href="https://dev-dario-goncalves-blog.pantheonsite.io/about/">Blog</a>
-        <a href="./about">About</a>
-        <a href="./contact">Contact</a>
+        <a href="/portfolio/">Home</a> <!-- Adjust the path as needed if your home page is not index.html inside the portfolio folder -->
+        <a href="/portfolio/gallery/">Gallery</a>
+        <a href="https://dev-dario-goncalves-blog.pantheonsite.io/about/">Blog</a> <!-- External link, unchanged -->
+        <a href="/portfolio/about/">About</a>
+        <a href="/portfolio/contact/">Contact</a>
     </div>
     
 
@@ -147,27 +149,30 @@
         <a href="./gallery" class="cta-button">View My Work</a>
     </section>
 
-    <section class="cards">
-        <div class="card">
-            <img src="images/NationalParkPosterFinal_dgoncalves .jpg" alt="Gallery">
-            <h2>Gallery</h2>
-            <p>Explore my projects and creations.</p>
-            <a href="./gallery">View Gallery</a>
-        </div>
-        <div class="card">
-            <img src="images/Poison cover 5.jpg" alt="About">
-            <h2>About Me</h2>
-            <p>Learn more about my journey and skills.</p>
-            <a href="./about">Learn More</a>
-        </div>
-        <div class="card">
-            <img src="images/BookCover ProjectPart2_dgoncalves.jpg" alt="Contact">
-            <h2>Contact</h2>
-            <p>Get in touch with me for collaborations.</p>
-            <a href="./contact">Contact Now</a>
-        </div>
+    
          </section>
-
+         <section class="cards">
+            <div class="card">
+                <i class="fas fa-images fa-3x"></i> <!-- FontAwesome Gallery Icon -->
+                <h2>Gallery</h2>
+                <p>Explore my projects and creations.</p>
+                <a href="gallery.html">View Gallery</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-user fa-3x"></i> <!-- FontAwesome About Icon -->
+                <h2>About Me</h2>
+                <p>Learn more about my journey and skills.</p>
+                <a href="about.html">Learn More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-phone fa-3x"></i> <!-- FontAwesome Contact Icon -->
+                <h2>Contact</h2>
+                <p>Get in touch with me for collaborations.</p>
+                <a href="contact.html">Contact Now</a>
+            </div>
+        </section>
+        
+        
     <footer>
         <p>&copy; Graphic Design covers. All rights reserved.</p>
     </footer>

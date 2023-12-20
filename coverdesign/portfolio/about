@@ -90,12 +90,13 @@
 
 <body>
     <div class="navbar">
-        <a href="./">Home</a>
-        <a href="./gallery">Gallery</a>
-        <a href="https://your-wordpress-site-url.com">Blog</a>
-        <a href="./about">About</a>
-        <a href="./contact">Contact</a>
+        <a href="/portfolio/">Home</a>
+        <a href="/portfolio/gallery/">Gallery</a>
+        <a href="https://dev-dario-goncalves-blog.pantheonsite.io/about/">Blog</a>
+        <a href="/portfolio/about/">About</a>
+        <a href="/portfolio/contact/">Contact</a>
     </div>
+    
     
 
     <section class="about-me">
