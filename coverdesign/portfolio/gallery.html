@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: #1a1a1a;
+            overflow: hidden;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 16px 24px;
+            transition: 0.3s;
+            font-weight: 500;
+            letter-spacing: 1px;
+            border-bottom: 3px solid transparent;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+            color: #f4f4f4;
+            border-bottom: 3px solid #e74c3c;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            top: 0;
+            left: 0;
+        }
+
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="https://dev-dario-goncalves-blog.pantheonsite.io/about/">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <h1 style="text-align:center; padding-top: 20px;">Gallery</h1>
+
+    <section class="gallery">
+        <img src="images/Prom Banner.jpg" alt="Prom Banner" onclick="openLightbox('images/Prom Banner.jpg')">
+        <img src="images/Yard Sign.png" alt="Yard Sign Design" onclick="openLightbox('images/Yard Sign.png')">
+        <img src="images/Yard SIgn1.png" alt="Yard Sign 1 Design" onclick="openLightbox('images/Yard SIgn1.png')">
+        <img src="images/thanksgivingcard1.jpg" alt="Thanksgiving card Page 1" onclick="openLightbox('images/thanksgivingcard1.jpg')">
+        <img src="images/thanksgivingcardcard2.jpg" alt="Thanksgiving Card Page 2" onclick="openLightbox('images/thanksgivingcardcard2.jpg')">
+<img src="images/thanksgivingcard3.jpg" alt="Thanksgiving Card Page 3" onclick="openLightbox('images/thanksgivingcard3.jpg')">
+        <img src="images/thanksgivingcard4.jpg" alt="Thanksgiving Card Page 4" onclick="openLightbox('images/thanksgivingcard4.jpg')">
+        <img src="images/newyears1.png" alt="New Year's Image 1" onclick="openLightbox('images/newyears1.png')">
+        <img src="images/newyears2.png" alt="New Year's Image 2" onclick="openLightbox('images/newyears2.png')">
+        <img src="images/newyears3.png" alt="New Year's Image 3" onclick="openLightbox('images/newyears3.png')">
+        <img src="images/newyears4.png" alt="New Year's Image 4" onclick="openLightbox('images/newyears4.png')">
+        <img src="images/bday1.png" alt="Birthday Image 1" onclick="openLightbox('images/bday1.png')">
+        <img src="images/bday2.png" alt="Birthday Image 2" onclick="openLightbox('images/bday2.png')">
+        <img src="images/bday3.png" alt="Birthday Image 3" onclick="openLightbox('images/bday3.png')">
+        <img src="images/bday4.png" alt="Birthday Image 4" onclick="openLightbox('images/bday4.png')">
+      <img src="images/Ad.png" alt="Advertisement Image" onclick="openLightbox('images/Ad.png')">
+      <img src="images/Screenshot 2023-11-09 at 5.44.01 PM.png" alt="Image Description" onclick="openLightbox('images/Screenshot 2023-11-09 at 5.44.01 PM.png')">
+        <img src="images/BookCoverProjectFinal_dgoncalves.jpg" alt="Book Cover" onclick="openLightbox('images/BookCoverProjectFinal_dgoncalves.jpg')">
+        <img src="images/NationalParkPosterFinal_dgoncalves .jpg" alt="Image 2" onclick="openLightbox('images/NationalParkPosterFinal_dgoncalves .jpg')">
+        <img src="images/CreativePortraitProjectFinal.jpg" alt="Image 3" onclick="openLightbox('images/CreativePortraitProjectFinal.jpg')">
+        <img src="images/MattePaintingProjectFinal_6014_DGoncalves copy 3.jpg" alt="Image 4" onclick="openLightbox('images/MattePaintingProjectFinal_6014_DGoncalves copy 3.jpg')">
+        <img src="images/(Portrait Photography Project Final)_6014_(DariGonaclves) copy.jpg" alt="Image 5" onclick="openLightbox('images/(Portrait Photography Project Final)_6014_(DariGonaclves) copy.jpg')">
+        <img src="images/Front.png" alt="Image 10" onclick="openLightbox('images/Front.png')">
+        <img src="images/Back.png" alt="Image 11" onclick="openLightbox('images/Back.png')">
+        <img src="images/live poster.png" alt="Live Poster Image" onclick="openLightbox('images/live poster.png')">
+        <img src="images/Neutral editing.jpg" alt="Image 8" onclick="openLightbox('images/Neutral editing.jpg')">
+        <img src="images/Phanton.jpg" alt="Image 9" onclick="openLightbox('images/Phanton.jpg')">
+        <img src="images/LionExercise copy.jpg" alt="Lion Exercise Illustration" onclick="openLightbox('images/LionExercise copy.jpg')">
+        <img src="images/SI nU kRE.png" alt="Image Description" onclick="openLightbox('images/SI nU kRE.png')">
+        <img src="images/Music Cover.jpg" alt="Image 6" onclick="openLightbox('images/Music Cover.jpg')">
+        <img src="images/Music Coverr.jpg" alt="Image 7" onclick="openLightbox('images/Music Coverr.jpg')">
+        <img src="images/frontfinal.png" alt="Front Final Image" onclick="openLightbox('images/frontfinal.png')">
+        <img src="images/finalback.png" alt="Final Back Image" onclick="openLightbox('images/finalback.png')">
+        <img src="images/tudutamuda.png" alt="Tudutamuda Image" onclick="openLightbox('images/tudutamuda.png')">
+        
+       
+       
+        
+      
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Lightbox Image" id="lightbox-img">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Graphic Design covers. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openLightbox(imgSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = imgSrc;
+            lightbox.style.display = 'block';
+
+            lightbox.onclick = function() {
+                lightbox.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
